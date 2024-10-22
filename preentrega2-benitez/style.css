@@ -1,0 +1,468 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header y navegación */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos para la página de inicio */
+.hero {
+    min-height: 400px;
+    background: url('https://placehold.co/1200x400.png') center no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.destacados {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promocion {
+    background: #e8491d;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para la página de catálogo */
+.filtros {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filtro-grupo {
+    margin-bottom: 15px;
+}
+
+.filtro-grupo h3 {
+    margin-bottom: 10px;
+}
+
+.filtro-grupo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filtro-grupo li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.filtro-grupo a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filtro-grupo a.filtro-activo {
+    background-color: #e8491d;
+    color: #fff;
+}
+
+.color-muestra {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.color-muestra.negro { background-color: #000; }
+.color-muestra.blanco { background-color: #fff; border: 1px solid #ddd; }
+.color-muestra.rojo { background-color: #ff0000; }
+.color-muestra.azul { background-color: #0000ff; }
+
+.paginacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacion a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 0 4px;
+}
+
+.paginacion a.pagina-actual {
+    background-color: #e8491d;
+    color: white;
+}
+
+/* Estilos para la página de ofertas */
+.banner-oferta {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x300.png') no-repeat center center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px; 
+}
+
+.banner-oferta h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.oferta-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.oferta-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.oferta-info {
+    padding: 10px;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.precio-oferta {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e8491d;
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e8491d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.oferta-dia {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.oferta-dia img {
+    max-width: 50%;
+    height: auto;
+}
+
+.oferta-dia-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.tiempo-restante {
+    font-weight: bold;
+    color: #e8491d;
+}
+
+/* Estilos para la página Nosotros */
+.historia, .mision-vision, .valores, .equipo {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.imagen-historia {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mision, .vision {
+    flex-basis: 48%;
+}
+
+.valores ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.valores li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.valores li:last-child {
+    border-bottom: none;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.miembro-equipo {
+    text-align: center;
+}
+
+.miembro-equipo img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la página de contacto */
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contacto-detalles, .mapa {
+    flex-basis: 48%;
+}
+
+.formulario-contacto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-grupo textarea {
+    height: 100px;
+}
+
+.faq {
+    margin-top: 30px;
+}
+
+.pregunta {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pregunta h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e8491d;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    .mision-vision,
+    .contacto-info {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .hero h1 {
+        margin-top: 40px;
+    }
+
+    .mision, .vision {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacto-detalles, .mapa {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
